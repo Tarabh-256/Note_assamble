@@ -1,0 +1,611 @@
+
+                    /*-----------------------------Navigation bar-------------------------*/
+        @keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0);
+            }
+
+            to {
+                -webkit-transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        button {
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-color: blue;
+            padding-top: 60px;
+        }
+
+        .modal-class {
+            color: rgb(0, 0, 0);
+            font-size: medium;
+            width: 1078px;
+            height: 91%;
+            background-color: #fefefe;
+            margin: auto;
+            border: 2px solid #888;
+            margin-top: -30px;
+        }
+
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s;
+        }
+
+        .cancel-btn {
+          width: 406px;
+          position: absolute;
+          font-size: 28px;
+          background-color: rgb(0, 0, 0);
+          color: white;
+          left: 135px;
+          top: 547px;
+          padding: 5px;
+        }
+
+        
+
+        .modebtn{
+          border-radius: 5px;
+          font-size: 26px;
+          font-family: 'FontAwesome';
+          color: #b7b4b4;
+          border: 2px solid red;
+          background: #ab070717;
+          height: 35px;
+          border-bottom-width: thick;
+          width: 212px;
+          max-width: 300px;
+          margin: 10px;
+        }
+
+      
+        .paragraphs{
+          max-height: 589px;
+          background: #000000;
+          color: wheat;
+          padding: 5px;
+          overflow-x: hidden; 
+        }
+
+        .paragraphs1  img{
+          width: 515px;
+          border: 5px solid red;
+          height: 580px;      
+        }
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+  .navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+   
+    align-items: center;
+    cursor: pointer;
+    left: 0px;
+    width: 100%;
+    background-color: #4e4752;
+}
+
+.background{
+  background: rgba(0, 0, 0, 0.7) url(../img/Koala.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.navlist{
+  align-items: center;
+  display: flex;
+  margin: 15px 0px;
+}
+
+.navlist li {
+  float: left;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+  .navlist li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.smallbox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 108px;
+}
+.pita{
+    padding: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tarabh {
+    position: absolute;
+    left: 120px;
+    width: 256px;
+    height: 40px;
+    background-color: darkslategrey;
+    cursor: pointer;
+}
+
+.chaptitle{
+  background-color: #4e030352;
+  height: 55px;
+  font-size: 20px;
+  font-family: ui-monospace;
+  font-weight: bold;
+  padding-top: 10px;
+  max-width: 250px;
+  color: #f12b2b;
+  border: 5px solid grey;
+}
+
+.content{
+  height: 100%;
+  width: 250px;
+  background-color: black;
+  border: 5px solid gray;
+  max-height: 335px;
+  overflow: overlay;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: whitesmoke; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(185, 183, 183); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(207, 209, 207); 
+}
+
+.btn{
+  width: 190px;
+  height: 23px;
+  border-radius: 10px;
+  margin-top: 12px;
+  color: #19c5d7;
+  overflow: hidden;
+  background-color: #7c7777;
+}
+.about img{
+  width: 21px;
+  margin-right: 8px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a1616;
+  color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(218, 72, 72);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.chemistry{
+  color: #f9f9f9;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px;
+    font-size: 35px;
+}
+.bharat{
+  color: #b7b4b4;
+  padding: 0px 40px;
+}
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  border: none;
+  cursor: pointer;
+  background-color: rgb(194, 183, 180);
+  font-size: 18px;
+}
+.btn{
+width: 200px;
+height: 42px;
+border-radius: 4px;
+margin-top: 12px;
+color: #19c5d7;
+overflow: hidden;
+background-color: #7c7777;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  color: black;
+}
+span.psw .for{
+  padding: 8px 8px;
+  color: black;
+  font-size: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 20px;
+}
+
+.line {
+  width: 45px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+.background {
+  
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgba(223, 147, 147, 0.356);
+  color: black;
+}
+
+.previous {
+  background-color: #000000;
+  color: white;
+  position: absolute;
+  top: 547px;
+  width: 300px;
+  padding: 7px;
+  left: 896px;
+  font-size: 25px;
+  font-family: 'FontAwesome';
+}
+
+.next {
+    background-color: #11c123;
+    color: white;
+    position: absolute;
+    top: 547px;
+    width: 25%;
+    padding: 6px;
+    left: 40%;
+    font-size: 25px;
+    font-family: 'FontAwesome';
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media only screen and (max-width: 1140px){
+  .background {
+    background: rgba(0, 0, 0, 0.7) url(../img/Koala.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+}
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+  .navbar{
+    height: 450px;
+    flex-direction: column;
+    transition: all 1.5s ease;
+  }
+  .navlist{
+    margin-top: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 350px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navlist li {
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+    margin: 0px 12px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 4px 1px;
+  }
+  .navlist li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px 12px;
+    border-radius: 10px;
+  }
+
+  
+
+
+  .burger{
+    display: block;
+  }
+  .h-nav-resp{
+    height: 60px;
+  }
+  .v-class-resp{
+    opacity: 0;
+    overflow: auto;
+  }
+  .smallbox {
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+.cancel-btn {
+  width: 105px;
+  position: absolute;
+  font-size: 28px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  left: 38px;
+  top: 670px;
+  padding: 5px;
+}
+.next{
+    position: absolute;
+    font-size: 27px;
+    background-color: #11c123;
+    color: white;
+    left: 144px;
+    top: 670px;
+    padding: 5px;
+    width: 61px;
+}
+.previous{
+  position: absolute;
+  font-size: 28px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  left: 218px;
+  top: 670px;
+  padding: 5px;
+  width: 100px;
+}
+.paragraphs{
+   max-height: 740px;
+    overflow: overlay;
+    background: antiquewhite;
+    color: wheat;  
+}
+
+.paragraphs img{
+  width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    border: 6px solid #fd0f0f;
+    padding: 5px;
+    /* display: block;*/
+}
+.modal-class{
+  margin-top: -36px;
+    height: 762px;
+    width: 350px;
+}
+}
+
